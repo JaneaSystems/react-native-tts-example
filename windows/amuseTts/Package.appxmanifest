@@ -8,8 +8,8 @@
   IgnorableNamespaces="uap mp iot">
 
   <Identity
-    Name="ef3cef70-5970-4938-b589-8b41e02b0e7e"
-    Publisher="CN=trita"
+    Name="ReactNativeTtsWinExample"
+    Publisher="CN=Janea"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="ef3cef70-5970-4938-b589-8b41e02b0e7e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>

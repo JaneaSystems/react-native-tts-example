@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "appium": "appium",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "test:windows": "yarn jest --setupFiles=./jest-setups/jest.setup.windows.js"
   },
   "dependencies": {
     "react": "16.13.1",
@@ -21,7 +23,12 @@
     "selenium-appium": "0.0.15",
     "selenium-webdriver": "^4.0.0-alpha.8"
   },
-  "jest": {
-    "preset": "react-native"
-  }
+	"jest": {
+		"preset": "react-native",
+		"transform": {
+			"^.+\\.jsx?$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+		},
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+		"moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+	}
 }
