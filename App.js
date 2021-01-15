@@ -126,10 +126,9 @@ export default class App extends Component<Props> {
       <View style={styles.container}>
         <Text style={styles.title}>{`React Native TTS Example`}</Text>
 
-        <Button title={`Read text`} onPress={this.readText} />
+        <Button testID='ReadText' title={`Read text`} onPress={this.readText} />
 
-        <Text style={styles.label}>{`Status: ${this.state.ttsStatus ||
-          ""}`}</Text>
+        <Text testID='Status' style={styles.label}>{`Status: ${this.state.ttsStatus || ""}`}</Text>
 
         <Text style={styles.label}>{`Selected Voice: ${this.state
           .selectedVoice || ""}`}</Text>
